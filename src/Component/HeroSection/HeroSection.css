@@ -1,0 +1,43 @@
+
+  .box-glow{
+     background-color:rgb(113, 91, 103); /* Adjust the color to your preference */
+    box-shadow: 0 0 5px rgb(41, 4, 21), 0 0 10px rgb(171, 60, 89), 0 0 15px rgba(215, 208, 209, 0.713); 
+    animation: spin  2s linear infinite;
+   
+  }
+
+  @keyframes spin{
+     0%{
+       transform: rotate( 0deg );
+     }
+     100%{
+       transform: rotate( 360deg );
+     }
+  }
+
+
+  .hero-bg{
+  /* background-image: url("../../assets/water-drops-6373296_1920.jpg"); */
+  /* background-image: url('https://cdn.pixabay.com/photo/2016/10/29/10/14/abstract-1780378_1280.png'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+background-image:
+    linear-gradient(to bottom, rgba(1, 4, 19, 0.847), rgba(16, 3, 16, 0.73)),
+    url('https://cdn.pixabay.com/photo/2016/10/29/10/14/abstract-1780378_1280.png');
+
+
+  }
+
+.btn-custom {
+   background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+ color: black;
+ padding: 4px 8px;
+ border-radius: 6px;
+ 
+}
+
+.cards{
+  border-radius: 200px 0px 0px 0px;
+
+}
