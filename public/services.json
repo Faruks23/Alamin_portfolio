@@ -1,0 +1,102 @@
+[
+  {
+    "service": "Search Engine Optimization (SEO)",
+    "description": "On-page optimization, off-page optimization, keyword research, content optimization, local SEO",
+    "imageLink": "https://example.com/seo-image.jpg"
+  },
+  {
+    "service": "Content Marketing",
+    "description": "Blogging, content creation, content strategy, content distribution, content promotion",
+    "imageLink": "https://example.com/content-marketing-image.jpg"
+  },
+  {
+    "service": "Social Media Marketing",
+    "description": "Social media strategy, social media management, social media advertising, social media engagement",
+    "imageLink": "https://example.com/social-media-marketing-image.jpg"
+  },
+  {
+    "service": "Pay-Per-Click (PPC) Advertising",
+    "description": "Google Ads, Facebook Ads, display advertising, remarketing campaigns, ad campaign management",
+    "imageLink": "https://example.com/ppc-advertising-image.jpg"
+  },
+  {
+    "service": "Email Marketing",
+    "description": "Email campaign management, email automation, email list management, newsletter creation, A/B testing",
+    "imageLink": "https://example.com/email-marketing-image.jpg"
+  },
+  {
+    "service": "Influencer Marketing",
+    "description": "Identifying and partnering with influencers, campaign management, measuring influencer impact, negotiating influencer contracts, reporting and analysis",
+    "imageLink": "https://example.com/influencer-marketing-image.jpg"
+  },
+  {
+    "service": "Affiliate Marketing",
+    "description": "Affiliate program setup, affiliate recruitment, performance tracking, commission management",
+    "imageLink": "https://example.com/affiliate-marketing-image.jpg"
+  },
+  {
+    "service": "Content Management",
+    "description": "Website design and development, landing page creation, e-commerce solutions, website maintenance",
+    "imageLink": "https://example.com/content-management-image.jpg"
+  },
+  {
+    "service": "Analytics and Data Analysis",
+    "description": "Web analytics, conversion rate optimization, data-driven decision-making, performance reporting",
+    "imageLink": "https://example.com/analytics-image.jpg"
+  },
+  {
+    "service": "Online Reputation Management",
+    "description": "Monitoring brand mentions, responding to customer feedback, managing online reviews, crisis management",
+    "imageLink": "https://example.com/online-reputation-management-image.jpg"
+  },
+  {
+    "service": "Mobile Marketing",
+    "description": "Mobile app marketing, SMS marketing, mobile advertising, app store optimization",
+    "imageLink": "https://example.com/mobile-marketing-image.jpg"
+  },
+  {
+    "service": "Video Marketing",
+    "description": "Video content creation, YouTube marketing, live streaming, video advertising",
+    "imageLink": "https://example.com/video-marketing-image.jpg"
+  },
+  {
+    "service": "Local SEO and Marketing",
+    "description": "Local search optimization, Google My Business management, location-based advertising, local content creation",
+    "imageLink": "https://example.com/local-seo-image.jpg"
+  },
+  {
+    "service": "E-commerce Marketing",
+    "description": "Product listing optimization, shopping ads, cart abandonment recovery, e-commerce SEO",
+    "imageLink": "https://example.com/ecommerce-marketing-image.jpg"
+  },
+  {
+    "service": "Marketing Automation",
+    "description": "Marketing automation platform setup, workflow creation, lead nurturing, drip campaigns",
+    "imageLink": "https://example.com/marketing-automation-image.jpg"
+  },
+  {
+    "service": "Chatbots and AI Marketing",
+    "description": "Chatbot implementation, AI-driven marketing campaigns, customer support automation, personalized recommendations",
+    "imageLink": "https://example.com/chatbots-ai-marketing-image.jpg"
+  },
+  {
+    "service": "Conversion Rate Optimization (CRO)",
+    "description": "A/B testing, user experience (UX) improvement, landing page optimization, call-to-action (CTA) optimization",
+    "imageLink": "https://example.com/cro-image.jpg"
+  },
+  {
+    "service": "Webinars and Virtual Events",
+    "description": "Planning and promotion, event management, engagement and follow-up",
+    "imageLink": "https://example.com/webinars-virtual-events-image.jpg"
+  },
+  {
+    "service": "Data Privacy and Compliance",
+    "description": "GDPR compliance, CCPA compliance, privacy policy creation",
+    "imageLink": "https://example.com/data-privacy-compliance-image.jpg"
+  },
+  {
+    "service": "Social Listening",
+    "description": "Monitoring social media conversations, brand sentiment analysis, competitor analysis",
+    "imageLink": "https://example.com/social-listening-image.jpg"
+  }
+]

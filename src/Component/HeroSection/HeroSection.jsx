@@ -3,7 +3,7 @@ import './HeroSection.css'
 import { BiPhoneCall } from "react-icons/bi";
 const HeroSection = () => {
   return (
-    <div className=" pt-32 relative hero-bg h-[700px] ">
+    <div className=" pt-32 relative hero-bg md:h-[600px] ">
       <div className=" w-6 h-5 mask mask-star absolute top-20  box-glow"></div>
       <div className=" w-6 h-5 mask mask-star absolute top-20  right-0 box-glow"></div>
 

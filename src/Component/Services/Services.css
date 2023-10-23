@@ -1,0 +1,55 @@
+ .sliced-card {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    background: linear-gradient(45deg, #3498db, #e74c3c);
+    color: #fff;
+    border-radius: 10px;
+  }
+
+  .sliced-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 150px 150px 0;
+    border-color: transparent transparent #e74c3c transparent;
+  }
+
+  .sliced-card-content {
+    padding: 20px;
+  }
+
+  .load-more-btn {
+     background: linear-gradient(136.85deg,#42063e -15.82%,#070b27 70.57%);
+     transition: all 0.5s ease-in-out;
+     transform:scale(1);
+  }
+  .load-more-btn:hover{
+    transform: scale(1.2);
+  }
+  .c-round{
+    animation: spin 3s linear infinite;
+  }
+  @keyframes spin{
+    0%{
+      transform: rotate(0deg);
+      
+    }
+    100%{
+      transform:rotate(360deg);
+       ;
+    }
+  }
+
+  .h-card{
+    transition: all 0.5s ease;
+    transform: scale(1);
+  }
+  .h-card:hover{
+    background: linear-gradient(136.85deg,#42063e -15.82%,#070b27 70.57%);
+    transform: scale(1.1);
+  }

@@ -1,0 +1,38 @@
+[
+  {
+    "image": "https://example.com/reviewer1.jpg",
+    "name": "John Doe",
+    "rating": 4.5,
+    "description": "Great experience working with this company. The team was responsive, and the results exceeded my expectations."
+  },
+  {
+    "image": "https://example.com/reviewer2.jpg",
+    "name": "Alice Smith",
+    "rating": 5.0,
+    "description": "Outstanding service! I couldn't be happier with the quality of work and the professionalism of the team."
+  },
+  {
+    "image": "https://example.com/reviewer3.jpg",
+    "name": "David Johnson",
+    "rating": 4.0,
+    "description": "A reliable partner for our marketing needs. They consistently deliver excellent results."
+  },
+  {
+    "image": "https://example.com/reviewer4.jpg",
+    "name": "Emily Brown",
+    "rating": 4.8,
+    "description": "Highly recommend! The team is creative, responsive, and delivers on time."
+  },
+  {
+    "image": "https://example.com/reviewer5.jpg",
+    "name": "Michael Wilson",
+    "rating": 4.2,
+    "description": "Good communication and attention to detail. We've seen a significant improvement in our online presence."
+  },
+  {
+    "image": "https://example.com/reviewer6.jpg",
+    "name": "Sarah Davis",
+    "rating": 4.7,
+    "description": "Fantastic results and a pleasure to work with. Our business has seen significant growth thanks to their efforts."
+  }
+]
