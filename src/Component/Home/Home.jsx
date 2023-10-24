@@ -4,6 +4,8 @@ import Services from '../Services/Services';
 import About from '../About/About';
 import Projects from '../Porjects/Projects';
 import Review from '../Review/Review';
+import Contact from '../Contact/Contact';
+import MyLocation from '../MyLocation/MyLocation';
 
 const Home = () => {
   return (
@@ -12,7 +14,10 @@ const Home = () => {
       <Services></Services>
       <About></About>
       <Projects></Projects>
-       <Review></Review>
+      <Review></Review>
+      <Contact></Contact>
+
+      <MyLocation></MyLocation>
 
     </div>
   );

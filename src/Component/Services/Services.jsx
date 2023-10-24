@@ -35,7 +35,7 @@ const [services, setServices] = useState([])
                 
                   <div
                     key={index}
-                    className=" h-card font-serif card w-[250px] glass px-3 py-2 shadow-lg h-[250px] overflow-hidden"
+                    className=" h-card font-serif card md:w-[250px] glass px-3 py-2 shadow-lg h-[250px] overflow-hidden"
                   >
                     <div className="  my-1">
                       <img
@@ -44,9 +44,9 @@ const [services, setServices] = useState([])
                         alt=""
                       />
                     </div>
-                    <hr className="full h-[2px] bg-gradient-to-r from-pink-500 to-blue-500" />
+                    <div className="full h-[3px] bg-gradient-to-r from-gray-900 to-gray-900" />
                     <h1 className="my-3 font-[700]">{service.service}</h1>
-                    <p className=' leading-[25px]  text-sm'>{service.description}</p>
+                    <p className=' leading-[25px]  text-sm'>{service.description.slice(0,130)}</p>
                   </div>
                 
               );

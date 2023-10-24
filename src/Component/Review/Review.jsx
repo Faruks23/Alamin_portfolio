@@ -12,8 +12,12 @@ const Review = () => {
 
   const [Review, setReview] = useState([])
   useEffect(() => {
-    
-    
+    fetch('Review.json')
+      .then(res => res.json())
+      .then(data => {
+       setReview(data)
+     })
+
   },[])
 
   return (
@@ -49,19 +53,34 @@ const Review = () => {
         modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <div className=" h-card h-[400px] w-[300px] glass rounded-md shadow-md  text-white">
-            bangladesh
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {
+          Review.map(item => {
+            return (
+              <SwiperSlide>
+                <div className="h-card h-[350px] w-[300px] glass rounded-md shadow-md  text-white p-6">
+                  <img
+                    className=" w-16 h-16  rounded-full mb-4"
+                    src={item.image}
+                    alt=""
+                  />
+
+                  <h3 className="text-xl font-semibold mb-2">{item.name}</h3>
+                  <p className=" text-sm leading-[25px] mb-4">{item.description}</p>
+                  <div className="flex items-center">
+                    <span className="text-yellow-500 mr-1">
+                      {"★".repeat(Math.round(item.rating))}
+                    </span>
+                    <span className="">{item.rating}</span>
+                  </div>
+                  <p className="font-semibold mt-2">
+                    - {item.name}
+                  </p>
+                </div>
+              </SwiperSlide>
+            );
+          })
+        }
+
       </Swiper>
     </div>
   );
