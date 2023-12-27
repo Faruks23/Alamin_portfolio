@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
+
+ 
 const About = () => {
+
   return (
-    <div className="container mx-auto rounded-lg glass md:h-[300px] w-full mb-[100px] md:flex justify-between">
+    <div
+      className="container mx-auto rounded-lg   w-full mb-[100px] bg-gradient-to-r from-gray-900 to-gray-950  border-t border-r border-teal-500 opacity-90  md:flex justify-between"
+    >
       <div className="p-2 md:p-0 md:w-[400px] h-full">
         <img
           src="https://img.freepik.com/foto-gratis/retrato-hombre-negocios-feliz-tableta-digital_1262-12831.jpg"
@@ -11,9 +16,9 @@ const About = () => {
         />
       </div>
 
-      <div className="about text-white p-6 font-serif h-card w-[100%]">
-        <h1 className="text-[40px] font-[700]">Md.Al-Amin</h1>
-        <p className=''>
+      <div className="about md:pt-[150px] pt-10 text-white px-5 font-serif w-[100%]">
+        <h1 className="text-[40px] font-serif font-[700] italic text-teal-500">Who we are</h1>
+        <p className="">
           {" "}
           As a digital marketer, I am a dynamic and data-driven professional who
           excels in navigating the complex and ever-changing world of online

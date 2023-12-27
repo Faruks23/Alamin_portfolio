@@ -1,10 +1,10 @@
 ul li{
 box-shadow: 2px 2px  5px rgba(0, 0, 0,0.4);
 
- border-radius: 10px;
+ border-radius: 5px;
  font-weight: 700;
-  background: linear-gradient(136.85deg,#42063e -15.82%,#070b27 70.57%);
-    color: #fff!important;
+ color: #fff!important;
+
 }
 
  

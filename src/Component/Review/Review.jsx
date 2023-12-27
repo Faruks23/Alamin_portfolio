@@ -21,10 +21,10 @@ const Review = () => {
   },[])
 
   return (
-    <div className=" container mx-auto">
-      <h1 className="text-center text-[40px] font-serif font-[700] text-white mb-20">
+    <div className=" container mx-auto mt-[100px]">
+      <h1 className=" text-[40px] font-serif font-[700] italic text-white mb-20">
         {" "}
-        Trusted Review
+        <span className=" text-teal-500"> Trusted </span> Review
       </h1>
       <Swiper
         slidesPerView={1}
@@ -53,34 +53,33 @@ const Review = () => {
         modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
-        {
-          Review.map(item => {
-            return (
-              <SwiperSlide>
-                <div className="h-card h-[350px] w-[300px] glass rounded-md shadow-md  text-white p-6">
-                  <img
-                    className=" w-16 h-16  rounded-full mb-4"
-                    src={item.image}
-                    alt=""
-                  />
+        {Review.map((item) => {
+          return (
+            <SwiperSlide>
+              <div className=" animate-pulse bg-gradient-to-r from-gray-900 to-gray-950 rounded-md shadow-xl  text-white p-6 border-t border-teal-500 border-b">
+                <img
+                  className=" w-16 h-16  rounded-full mb-4"
+                  src={item.image}
+                  alt=""
+                />
 
-                  <h3 className="text-xl font-semibold mb-2">{item.name}</h3>
-                  <p className=" text-sm leading-[25px] mb-4">{item.description}</p>
-                  <div className="flex items-center">
-                    <span className="text-yellow-500 mr-1">
-                      {"★".repeat(Math.round(item.rating))}
-                    </span>
-                    <span className="">{item.rating}</span>
-                  </div>
-                  <p className="font-semibold mt-2">
-                    - {item.name}
-                  </p>
+                <h3 className="text-xl  text-teal-500 font-semibold mb-2">
+                  {item.name}
+                </h3>
+                <p className=" text-sm text-gray-400 leading-[25px] mb-4">
+                  {item.description}
+                </p>
+                <div className="flex items-center">
+                  <span className="text-yellow-500 mr-1">
+                    {"★".repeat(Math.round(item.rating))}
+                  </span>
+                  <span className="">{item.rating}</span>
                 </div>
-              </SwiperSlide>
-            );
-          })
-        }
-
+                <p className="font-semibold mt-2">- {item.name}</p>
+              </div>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </div>
   );

@@ -24,7 +24,7 @@
   }
 
   .load-more-btn {
-     background: linear-gradient(136.85deg,#42063e -15.82%,#070b27 70.57%);
+     background: linear-gradient(136.85deg,rgb(1, 6, 10) -15.82%,#070b27 70.57%);
      transition: all 0.5s ease-in-out;
      transform:scale(1);
   }
@@ -45,11 +45,7 @@
     }
   }
 
-  .h-card{
-    transition: all 0.5s ease;
-    transform: scale(1);
-    background: linear-gradient(136.85deg,#42063e -15.82%,#070b27 70.57%);
-  }
+ 
   .h-card:hover{
     
     transform: scale(1.1);
