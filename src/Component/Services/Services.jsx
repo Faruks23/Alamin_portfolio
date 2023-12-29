@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Services.css'
 import SectionTitle from '../../shared/SectionTitle';
 
- 
+ import AOS from "aos";
+ import "aos/dist/aos.css"; 
 const Services = () => {
 const [visible, setVisible] = useState(8);
 const [services, setServices] = useState([])
@@ -25,6 +26,10 @@ const [loading, setLoading] = useState(true)
     setVisible(items)
   }
 
+  
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <div className="my-[100px]  mx-[5%] text-white  relative overflow-x-hidden">
@@ -64,7 +69,8 @@ const [loading, setLoading] = useState(true)
                 {services.slice(0, visible).map((service, index) => {
                   return (
                     <div
-                      
+                      data-aos="fade-up"
+                      data-aos-duration="2200"
                       key={service._id}
                       className={` font-serif  px-3 py-2 bg-gradient-to-r from-gray-900 to-gray-950  rounded-md  shadow-xl overflow-hidden border-r border-teal-400`}
                     >

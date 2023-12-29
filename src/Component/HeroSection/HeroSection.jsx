@@ -4,11 +4,15 @@ import { BiPhoneCall } from "react-icons/bi";
 import { SiUpwork, SiFiverr } from "react-icons/si";
 import { BsFacebook, BsLinkedin, BsInstagram } from "react-icons/bs";
 import { TypeAnimation } from 'react-type-animation';
-
+import AOS from "aos";
+import "aos/dist/aos.css"; 
  
  
 const HeroSection = () => {
 
+  useEffect(() => { 
+      AOS.init();
+  },[])
   return (
     <div className=" pt-32 relative hero-bg md:h-[650px] ">
       <div className=" w-6 h-5 mask mask-star absolute top-20  box-glow"></div>
@@ -32,7 +36,11 @@ const HeroSection = () => {
       <div className="hr-content md:flex gap-6  justify-between items-center  mx-[5%] ">
         <section class=" text-white py-16 md:w-[50%]">
           <div class="">
-            <h1 class="md:text-[50px] text-3xl font-[700] mb-10 md:leading-[60px] mt-[-70px]  text-teal-500 font-serif uppercase leading-[50px] ">
+            <h1
+              data-aos="fade-up"
+              data-aos-duration="1100"
+              class="md:text-[50px] text-3xl font-[700] mb-10 md:leading-[60px] mt-[-70px]  text-teal-500 font-serif uppercase leading-[50px] "
+            >
               Digital Marketing Expert, <br />
               <TypeAnimation
                 sequence={[
@@ -49,7 +57,7 @@ const HeroSection = () => {
             </h1>
             <p
               data-aos="fade-up"
-              data-aos-duration="1200"
+              data-aos-duration="2200"
               class=" font-mono capitalize  text-gray-300  font-thin italic leading-7"
             >
               Strategizing, optimizing, and delivering digital marketing
@@ -58,7 +66,11 @@ const HeroSection = () => {
               innovative digital strategies.
             </p>
 
-            <div className="flex gap-4 mt-10">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2500"
+              className="flex gap-4 mt-10"
+            >
               <button className="load-more-btn px-4 py-2 rounded-md">
                 Explore
               </button>
@@ -70,7 +82,11 @@ const HeroSection = () => {
             </div>
           </div>
         </section>
-        <div className="image-slider md:w-[50%] flex   justify-center  overflow-hidden h-[500px] ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2700"
+          className="image-slider md:w-[50%] flex   justify-center  overflow-hidden h-[500px] "
+        >
           <img
             src="digital.gif"
             alt=""
@@ -78,7 +94,11 @@ const HeroSection = () => {
           />
         </div>
       </div>
-      <div className="fixed md:top-[25%] z-20 top-[60%] right-0 p-2">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="2200"
+        className="fixed md:top-[25%] z-20 top-[60%] right-0 p-2"
+      >
         <ul className="social-account">
           <li className="heartbeat">
             <a href="'/">

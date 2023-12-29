@@ -1,9 +1,13 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
 import './Header.css'
 import { Link } from 'react-router-dom';
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 const Header = () => {
   
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="navbar px-[5%] bg-opacity-50 backdrop-blur text-white z-50   fixed top-0 bg-transparent shadow-md">
       <div className="navbar-start">
@@ -26,7 +30,7 @@ const Header = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[10] p-2 shadow bg-base-100 rounded-box  w-[300px] h-[400px] flex flex-col gap-3"
+            className="menu menu-sm dropdown-content mt-3 z-[10] p-2 shadow  rounded-box  w-[300px] h-[400px] flex flex-col gap-3"
           >
             <li>
               <Link to={"/"}>Home</Link>
@@ -42,29 +46,42 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <a className=" font-serif text-xl italic font-[700] md:text-[42px]">
+        <a
+          data-aos="fade-down"
+          data-aos-duration="2100"
+          className=" font-serif text-xl italic font-[700] md:text-[42px]"
+        >
           Digital <span className=" text-teal-500"> World</span>{" "}
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal gap-10">
-          <li>
+          <li data-aos="fade-down" data-aos-duration="2200">
             <Link to={"/"}>Home</Link>
           </li>
-          <li>
+          <li data-aos="fade-down" data-aos-duration="2300">
             <Link to={"/"}>Portfolio</Link>
           </li>
-          <li>
+          <li data-aos="fade-down" data-aos-duration="2400">
             <Link to={"/"}>About</Link>
           </li>
-          <li>
+          <li data-aos="fade-down" data-aos-duration="2500">
             <Link to={"/"}>Services</Link>
           </li>
         </ul>
-        <div className='ml-0 md:ml-32'>
-          <button type='button' className="btn btn-sm bg-transparent border-0  bg-teal-500 text-white capitalize font-serif"> Heir Me</button>
-         </div>
-        
+        <div
+          data-aos="fade-down"
+          data-aos-duration="2600"
+          className="ml-0 md:ml-32 "
+        >
+          <button
+            type="button"
+            className="btn btn-sm bg-transparent border-0  bg-teal-500 text-white capitalize font-serif"
+          >
+            {" "}
+            Heir Me
+          </button>
+        </div>
       </div>
     </div>
   );
