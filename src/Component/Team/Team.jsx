@@ -4,9 +4,7 @@
  const Team = () => {
   const [members, setMembers] = useState([]);
   const fetchTeamMembers = async () => {
-    const response = await fetch(
-      `${import.meta.env.VITE_SERVER_KEY}/team/members`
-    );
+    const response = await fetch(`https://alaminislam.vercel.app/team/members`);
     const data = await response.json();
     console.log(data);
     setMembers(data);

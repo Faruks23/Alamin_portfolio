@@ -12,7 +12,7 @@ const [loading, setLoading] = useState(true)
   
   useEffect(() => {
     setLoading(true)
-    fetch(`${import.meta.env.VITE_SERVER_KEY}/services`)
+    fetch(`https://alaminislam.vercel.app/services`)
       .then((res) => res.json())
       .then((data) => {
         setServices(data);
