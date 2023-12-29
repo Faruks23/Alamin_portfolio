@@ -19,7 +19,6 @@
     "daisyui": "^3.9.3",
     "firebase": "^9.22.0",
     "flowbite-react": "^0.6.4",
-    "gsap": "^3.12.4",
     "install": "^0.13.0",
     "localforage": "^1.10.0",
     "locomotive-scroll": "^4.1.4",

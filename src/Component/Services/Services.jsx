@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Services.css'
+import SectionTitle from '../../shared/SectionTitle';
 
  
 const Services = () => {
@@ -28,10 +29,7 @@ const [loading, setLoading] = useState(true)
   return (
     <div className="my-[100px]  mx-[5%] text-white  relative overflow-x-hidden">
       <div>
-        <h1 className=" text-[30px]  text-center md:text-[50px] font-serif font-[700] italic ">
-          {" "}
-          Our <span className=' text-teal-500'>Services</span>
-        </h1>
+         <SectionTitle firstTitle={'Our'} SecondTitle={"Services"}></SectionTitle>
         <div className="flex justify-center  w-full z-10">
           <div
          

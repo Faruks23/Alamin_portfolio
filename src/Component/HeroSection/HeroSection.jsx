@@ -31,16 +31,13 @@ const HeroSection = () => {
       <div className="hr-content md:flex gap-6  justify-between items-center  mx-[5%] ">
         <section class=" text-white py-16 md:w-[50%]">
           <div class="">
-            <h1
-              
-              class="md:text-[50px] text-3xl font-[700] mb-10 md:leading-[60px] mt-[-70px]  text-teal-500 font-serif"
-            >
+            <h1 class="md:text-[50px] text-3xl font-[700] mb-10 md:leading-[60px] mt-[-70px]  text-teal-500 font-serif">
               Digital Marketing Expert, <br /> Your Brand's Digital Potential{" "}
             </h1>
             <p
               data-aos="fade-up"
               data-aos-duration="1200"
-              class="text-lg  font-serif capitalize  text-gray-300 font-thin"
+              class=" font-mono capitalize  text-gray-300  font-thin"
             >
               Strategizing, optimizing, and delivering digital marketing
               solutions to drive success and growth in the digital
@@ -49,13 +46,8 @@ const HeroSection = () => {
             </p>
 
             <div className="flex gap-4 mt-10">
-              <button className="btn-custom">
-                Explore
-              </button>
-              <button
-                
-                className="border shadow-md bg-transparent  px-2 py-1 rounded-[8px] flex items-center gap-2"
-              >
+              <button className="load-more-btn px-4 py-2 rounded-md">Explore</button>
+              <button className="border shadow-md bg-transparent  px-2 py-1 rounded-[8px] flex items-center gap-2">
                 {" "}
                 <BiPhoneCall></BiPhoneCall>
                 Contact
@@ -65,18 +57,14 @@ const HeroSection = () => {
         </section>
         <div className="image-slider md:w-[50%] flex   justify-center  overflow-hidden h-[500px] ">
           <img
-           
-            src="https://i.ibb.co/HrrMfBw/Png-Item-6925694-2.png"
+            src="digital.gif"
             alt=""
-            className=" drop-shadow-xl "
+            className="w-full h-full shadow-2xl  blur-[1px]"
           />
         </div>
       </div>
       <div className="fixed md:top-[25%] z-20 top-[60%] right-0 p-2">
-        <ul
-         
-          className="social-account"
-        >
+        <ul className="social-account">
           <li className="heartbeat">
             <a href="'/">
               <BsFacebook className="w-10 my-6 h-10 rounded-full"></BsFacebook>

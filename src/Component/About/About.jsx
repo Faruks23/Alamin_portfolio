@@ -1,43 +1,53 @@
 import React, { useEffect } from 'react';
+import SectionTitle from '../../shared/SectionTitle';
 
 
  
 const About = () => {
 
   return (
-    <div
-      className="container mx-auto rounded-lg   w-full mb-[100px] bg-gradient-to-r from-gray-900 to-gray-950  border-t border-r border-teal-500 opacity-90  md:flex justify-between"
-    >
-      <div className="p-2 md:p-0 md:w-[400px] h-full">
-        <img
-          src="https://img.freepik.com/foto-gratis/retrato-hombre-negocios-feliz-tableta-digital_1262-12831.jpg"
-          alt=""
-          className="md:w-[400px] h-full w-full rounded-md"
-        />
-      </div>
+    <>
+      <div className="container mx-auto">
+        <SectionTitle
+          firstTitle={"Who"}
+          SecondTitle={"we are"}
+          className={"text-right"}
+        ></SectionTitle>
 
-      <div className="about md:pt-[150px] pt-10 text-white px-5 font-serif w-[100%]">
-        <h1 className="text-[40px] font-serif font-[700] italic text-teal-500">Who we are</h1>
-        <p className="">
-          {" "}
-          As a digital marketer, I am a dynamic and data-driven professional who
-          excels in navigating the complex and ever-changing world of online
-          marketing. With a passion for all things digital, I thrive on crafting
-          strategic campaigns that drive results. My expertise spans various
-          areas, including search engine optimization (SEO), social media
-          marketing, content creation, and email campaigns. I am dedicated to
-          enhancing brand visibility, <br /> engaging target audiences, and
-          optimizing conversion rates. In an environment where algorithms and
-          consumer behavior are in constant flux, I take pride in my ability to
-          analyze data, interpret consumer insights, and adapt to emerging
-          trends. My mission is to help businesses succeed in the digital age by
-          creating compelling online experiences and delivering measurable
-          results. With a strong work ethic and a commitment to excellence, I am
-          ready to take on any digital marketing challenge and drive success for
-          your brand.
-        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
+          <div className=" px-20  w-full">
+            <img
+              src="https://img.freepik.com/foto-gratis/retrato-hombre-negocios-feliz-tableta-digital_1262-12831.jpg"
+              alt=""
+              className="md:w-[400px] h-[400px] w-full rounded-md"
+            />
+            <h1 className=" font-bold text-white text-2xl mb-1 mt-10">Alamin</h1>
+            <p className='  text-teal-500'>Professional Digital marketer</p>
+          </div>
+
+          <div className="about md:pt-[100px] pt-7  p-4   text-white px-5 font-serif ">
+            <h1 className='font-bold text-3xl mb-4  uppercase leading-10'>
+              Versatile Digital Marketer. <br />Driving Success Through Strategy and.
+              Engagement
+            </h1>
+            <p className=" mb-10 font-mono pr-7 text-justify">
+              {" "}
+              Experienced digital marketer skilled in SEO, social media, and
+              content creation. I excel at enhancing brand visibility, engaging
+              audiences, and driving conversions. Proficient in data analysis
+              and adaptive to changing trends. Dedicated to delivering
+              measurable results and creating compelling online experiences.
+            </p>
+            <img
+              src="https://img.freepik.com/foto-gratis/retrato-hombre-negocios-feliz-tableta-digital_1262-12831.jpg"
+              alt=""
+              className="md:w-[400px] h-[400px] w-full rounded-md"
+            />
+           <p className='text-right px-5 py-3 bg-teal-500 rounded-md shadow-lg float-right mt-5'>Heir Me</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

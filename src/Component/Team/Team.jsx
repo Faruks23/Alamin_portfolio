@@ -1,5 +1,5 @@
  import React, { useEffect, useState } from 'react';
-import Marquee from 'react-fast-marquee';
+
  
  const Team = () => {
   const [members, setMembers] = useState([]);
