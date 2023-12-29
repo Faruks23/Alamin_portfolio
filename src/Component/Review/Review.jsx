@@ -7,6 +7,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import './Review.css'
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+import SectionTitle from "../../shared/SectionTitle";
 const Review = () => {
 
 
@@ -20,12 +23,20 @@ const Review = () => {
 
   },[])
 
+  
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className=" container mx-auto mt-[100px]">
-      <h1 className=" text-[40px] font-serif font-[700] italic text-white mb-20">
-        {" "}
-        <span className=" text-teal-500"> Trusted </span> Review
-      </h1>
+    <div className=" container mx-auto px-10 md:px-0 mt-[100px]">
+   
+      <SectionTitle
+        firstTitle={"Trusted"}
+        SecondTitle={"Review"}
+        className={'text-right'}
+      ></SectionTitle>
+      <div className=" mt-20">
+        
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -56,7 +67,11 @@ const Review = () => {
         {Review.map((item) => {
           return (
             <SwiperSlide>
-              <div className=" animate-pulse bg-gradient-to-r from-gray-900 to-gray-950 rounded-md shadow-xl  text-white p-6 border-t border-teal-500 border-b">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2400"
+                className=" animate-pulse bg-gradient-to-r from-gray-900 to-gray-950 rounded-md shadow-xl  text-white p-6 border-t border-teal-500 border-b"
+              >
                 <img
                   className=" w-16 h-16  rounded-full mb-4"
                   src={item.image}
@@ -81,6 +96,7 @@ const Review = () => {
           );
         })}
       </Swiper>
+      </div>
     </div>
   );
 };

@@ -1,14 +1,13 @@
 
 import React from "react";
+import SectionTitle from "../../shared/SectionTitle";
 const MyLocation = () => {
  
 
   return (
     <div className=" container mx-auto mt-10">
-      <h1 className=" font-serif italic text-[40px] font-[700] text-white">
-        {" "}
-        Our <span className=" text-teal-500">Location</span>{" "}
-      </h1>
+     
+      <SectionTitle firstTitle={'Our'} SecondTitle={'Location'}></SectionTitle>
       <div className=" p-5 container mx-auto  bg-gray-950 border  mt-10 border-teal-500">
         <div classNameName="container mx-auto">
           <iframe

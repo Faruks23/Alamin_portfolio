@@ -1,8 +1,12 @@
 import React, { useEffect } from 'react';
 import './Contact.css'
-
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 const Contact = () => {
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
       <section className="background-radial-gradient mb-40 overflow-hidden mt-32">
@@ -11,21 +15,28 @@ const Contact = () => {
         <div className="px-6 py-12 text-center md:px-12 lg:py-24 lg:text-left">
           <div className="w-100 mx-auto text-neutral-800 sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
             <div className="grid items-center gap-12 lg:grid-cols-2">
-              <div
-              
-                style={{ zIndex: "10" }}
-              >
-                <h1 className="mt-0 mb-12 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl text-[hsl(218,81%,95%)] capitalize font-serif">
+              <div style={{ zIndex: "10" }}>
+                <h1
+                  data-aos="fade-up"
+                  data-aos-duration="2200"
+                  className="mt-0 mb-12 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl text-[hsl(218,81%,95%)] capitalize font-serif"
+                >
                   The best offer <br />
                   <span className="text-[hsl(218,81%,75%)]">
                     for your business
                   </span>
                 </h1>
-                <p className="opacity-70 text-[hsl(218,81%,85%)]">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Temporibus, expedita iusto veniam atque, magni tempora
-                  mollitia dolorum consequatur nulla, neque debitis eos
-                  reprehenderit quasi ab ipsum nisi dolorem modi. Quos?
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="2400"
+                  className="opacity-70 text-[hsl(218,81%,85%)] font-mono"
+                >
+                  Unlock unparalleled opportunities for your business with our
+                  premier offering! Elevate your operations, enhance
+                  productivity, and maximize growth potential with our tailored
+                  solutions. Experience the pinnacle of service excellence and
+                  innovation as we drive your success forward. Discover the best
+                  for your business today!
                 </p>
               </div>
               <div className="relative mb-12 lg:mb-0">
@@ -36,8 +47,6 @@ const Contact = () => {
                 <div id="radius-shape-2" className="absolute shadow-lg"></div>
                 <div
                   data-aos="fade-left"
-                  
-               
                   className="relative backdrop-blur-[25px] backdrop-saturate-[200%] block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-[hsla(0,0%,15%,0.9)] shadow-black/20 md:px-12 text-white"
                 >
                   <form
