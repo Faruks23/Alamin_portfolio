@@ -20,7 +20,6 @@ const Review = () => {
       .then(data => {
        setReview(data)
      })
-
   },[])
 
   
