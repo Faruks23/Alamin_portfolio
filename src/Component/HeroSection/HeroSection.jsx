@@ -97,7 +97,7 @@ const HeroSection = () => {
       <div
         data-aos="fade-left"
         data-aos-duration="2200"
-        className="fixed md:top-[25%] z-20 top-[60%] right-0 p-2"
+        className="fixed md:top-[25%] z-20 top-[30%] right-0 p-2"
       >
         <ul className="social-account">
           <li className="heartbeat">

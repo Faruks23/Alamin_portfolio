@@ -12,7 +12,7 @@
 }
 
 .scrollBtn {
-  background-color:peru;
+   background-color: rgb(8, 156, 182);
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -23,7 +23,7 @@
 }
 
 .scrollBtn:hover {
-  background-color: rgb(224, 115, 6);
+  background-color: rgb(12, 125, 201);
 }
 
 .screenReaderText {
