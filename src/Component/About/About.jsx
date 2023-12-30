@@ -35,7 +35,7 @@ const About = () => {
             <p className="  text-teal-500">Professional Digital marketer</p>
           </div>
 
-          <div className="about md:pt-[100px] pt-7  p-4   text-white px-5 font-serif ">
+          <div className="about md:pt-[100px] pt-7  p-4   text-white px-5 font-serif  border-l border-teal-500 ">
             <h1
               data-aos="fade-up"
               data-aos-duration="2200"

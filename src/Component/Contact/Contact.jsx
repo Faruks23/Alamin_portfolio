@@ -47,7 +47,7 @@ const Contact = () => {
                 <div id="radius-shape-2" className="absolute shadow-lg"></div>
                 <div
                   data-aos="fade-left"
-                  className="relative backdrop-blur-[25px] backdrop-saturate-[200%] block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-[hsla(0,0%,15%,0.9)] shadow-black/20 md:px-12 text-white"
+                  className="relative backdrop-blur-[25px] backdrop-saturate-[200%] block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04) shadow-black/20 md:px-12 text-white"
                 >
                   <form
                     data-aos="fade-up"
