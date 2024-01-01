@@ -72,12 +72,12 @@ const [loading, setLoading] = useState(true)
                       data-aos="fade-up"
                       data-aos-duration="2200"
                       key={service._id}
-                      className={` font-serif  px-3 py-2 bg-gradient-to-r from-gray-900 to-gray-950  rounded-md  shadow-xl overflow-hidden border-r border-teal-400`}
+                      className={` font-serif   px-3 py-2 bg-gradient-to-r from-gray-900 to-gray-950 hover:shadow-2xl   hover:scale-150  duration-300 rounded-md  shadow-xl overflow-hidden border border-teal-400`}
                     >
-                      <div className="  my-1">
+                      <div className="  my-1 w-full h-[150px]">
                         <img
                           src={service.imageLink}
-                          className={"w-16 h-16 bg-slate-500 rounded-full"}
+                          className={" bg-slate-500 w-full h-full"}
                           alt=""
                         />
                       </div>

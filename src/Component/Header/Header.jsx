@@ -76,9 +76,9 @@ const Header = () => {
         >
           <button
             type="button"
-            className="btn btn-sm bg-transparent border-0  bg-teal-500 text-white capitalize font-serif"
+            className="  border-0 px-3 py-1 rounded-md  bg-teal-500 text-white capitalize font-serif"
           >
-            {" "}
+         
             Heir Me
           </button>
         </div>
