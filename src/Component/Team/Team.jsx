@@ -36,9 +36,9 @@ import "aos/dist/aos.css";
                   key={member._id}
                   className=" bg-gradient-to-r from-gray-900 to-gray-950  p-4 rounded-md shadow-md  hover:scale-125 transition-all border-l   h-[300px] w-[250px] border-b border-teal-500 duration-500 opacity-95  text-gray-400 "
                 >
-                  <div className="imag my-2">
+                  <div className="imag my-2 w-full h-[150px]">
                     <img
-                      className="w-10 h-10 rounded-full"
+                      className="  w-full h-full bg-slate-200"
                       src={member?.image}
                       alt=""
                     />
