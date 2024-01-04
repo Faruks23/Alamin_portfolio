@@ -3,11 +3,14 @@ import './Header.css'
 import { Link } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css"; 
+
 const Header = () => {
-  
+
+
   useEffect(() => {
     AOS.init();
   }, []);
+
   return (
     <div className="navbar px-[5%] bg-opacity-50 backdrop-blur text-white z-50   fixed top-0 bg-transparent shadow-md">
       <div className="navbar-start">

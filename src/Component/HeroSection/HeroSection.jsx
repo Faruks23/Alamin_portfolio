@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './HeroSection.css'
 import { BiPhoneCall } from "react-icons/bi";
 import { SiUpwork, SiFiverr } from "react-icons/si";
@@ -12,7 +12,21 @@ const HeroSection = () => {
 
   useEffect(() => { 
       AOS.init();
-  },[])
+  }, [])
+
+  const [socials,setSocialAccounts]=useState([])
+   const fetchSocialAccounts = async () => {
+     const response = await fetch(`${import.meta.env.VITE_SERVER_KEY}/social`);
+     const data = await response.json();
+     setSocialAccounts(data);
+   };
+
+   useEffect(() => {
+     fetchSocialAccounts();
+   }, [updated]);
+
+
+
   return (
     <div className=" pt-32 relative hero-bg md:h-[650px] ">
       <div className=" w-6 h-5 mask mask-star absolute top-20  box-glow"></div>
@@ -101,27 +115,27 @@ const HeroSection = () => {
       >
         <ul className="social-account">
           <li className="heartbeat">
-            <a href="'/">
+            <a href={socials[0]?.link}>
               <BsFacebook className="w-10 my-6 h-10 rounded-full"></BsFacebook>
             </a>
           </li>
           <li className="heartbeat">
-            <a href="'/">
+            <a href={socials[2]?.link}>
               <BsLinkedin className="w-10 my-6 h-10 rounded-full"></BsLinkedin>
             </a>
           </li>
           <li className="heartbeat">
-            <a href="'/">
+            <a href={socials[1]?.link}>
               <BsInstagram className="w-10 my-6 h-10 rounded-full"></BsInstagram>
             </a>
           </li>
           <li className="heartbeat">
-            <a href="'/">
+            <a href={socials[4]?.link}>
               <SiUpwork className="w-10 my-6 h-10 rounded-full"></SiUpwork>
             </a>
           </li>
           <li className="heartbeat">
-            <a href="'/">
+            <a href={socials[3]?.link}>
               <SiFiverr className="w-10 my-6 h-10 rounded-full"></SiFiverr>
             </a>
           </li>
