@@ -93,4 +93,7 @@
 
 
 
+.hero-image{
+ clip-path: polygon(18% 0, 100% 0, 91% 100%, 7% 100%);
+}
 

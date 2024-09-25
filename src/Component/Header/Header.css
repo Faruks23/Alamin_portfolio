@@ -8,3 +8,32 @@ box-shadow: 2px 2px  5px rgba(0, 0, 0,0.4);
 }
 
  
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+.wrapper svg {
+	font-family: "Russo One", sans-serif;
+  height: 50px;
+  width: 170px;
+	
+}
+ .wrapper svg text {
+	animation: stroke 7s infinite alternate;
+	stroke-width: 2;
+	stroke:rgb(12, 211, 188);
+	font-size: 40px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(207, 229, 252, 0); stroke: rgb(151, 182, 233);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(177, 206, 235, 0); stroke: rgb(160, 186, 226); }
+	80%  {fill: rgba(169, 202, 235, 0); stroke: rgb(198, 213, 238); stroke-width: 3; }
+	100% {
+		fill: rgb(238, 243, 247); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+

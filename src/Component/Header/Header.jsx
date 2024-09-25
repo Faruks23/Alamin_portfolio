@@ -54,11 +54,17 @@ const Header = () => {
           data-aos-duration="2100"
           className=" font-serif text-xl italic font-[700] md:text-[42px]"
         >
-          Digital <span className=" text-teal-500"> World</span>{" "}
+          <div class="wrapper">
+            <svg>
+              <text x="50%" y="50%" dy=".5em" text-anchor="middle">
+                All Amin
+              </text>
+            </svg>
+          </div>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal gap-10">
+        <ul className="flex gap-10 items-center hover:text-white">
           <li data-aos="fade-down" data-aos-duration="2200">
             <Link to={"/"}>Home</Link>
           </li>
@@ -77,13 +83,16 @@ const Header = () => {
           data-aos-duration="2600"
           className="ml-0 md:ml-32 "
         >
-          <button
-            type="button"
-            className="  border-0 px-3 py-1 rounded-md  bg-teal-500 text-white capitalize font-serif"
-          >
-         
-            Heir Me
-          </button>
+          <a href="#contact">
+            {" "}
+            <button
+              type="button"
+              className="  border-0 px-3 py-1 rounded-md  bg-teal-500 text-white capitalize font-serif"
+            >
+              Heir Me
+            </button>
+          </a>
+        
         </div>
       </div>
     </div>

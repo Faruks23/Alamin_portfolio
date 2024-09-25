@@ -53,7 +53,7 @@ const HeroSection = () => {
             <h1
               data-aos="fade-up"
               data-aos-duration="1100"
-              class="md:text-[50px] text-3xl font-[700] mb-10 md:leading-[60px] mt-[-70px]  text-teal-500 font-serif uppercase leading-[50px] "
+              class="md:text-[50px] text-3xl font-[700] mb-10 md:leading-[60px] mt-[-70px]  text-teal-500 font-serif  leading-[50px] "
             >
               Digital Marketing Expert, <br />
               <TypeAnimation
@@ -67,12 +67,13 @@ const HeroSection = () => {
                 wrapper="span"
                 speed={500}
                 repeat={Infinity}
+                style={{ fontSize: "30px" }}
               />
             </h1>
             <p
               data-aos="fade-up"
               data-aos-duration="2200"
-              class=" font-mono capitalize  text-gray-300  font-thin italic leading-7"
+              class=" capitalize  text-gray-300  font-thin  leading-7"
             >
               Strategizing, optimizing, and delivering digital marketing
               solutions to drive success and growth in the digital
@@ -101,11 +102,13 @@ const HeroSection = () => {
           data-aos-duration="2700"
           className="image-slider md:w-[50%] flex   justify-center  overflow-hidden h-[500px] "
         >
-          <img
-            src="digital.gif"
-            alt=""
-            className="w-full h-full shadow-2xl  blur-[1px]"
-          />
+         
+            <img
+              src="alamin1.jpg"
+              alt=""
+              className="w-full h-full shadow-2xl  blur-[1px] hero-image md:w-[70%]"
+            />
+          
         </div>
       </div>
       <div

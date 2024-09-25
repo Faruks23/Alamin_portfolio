@@ -54,10 +54,10 @@ const [loading, setLoading] = useState(true)
                         </div>
                         <div className="full h-[3px] bg-gradient-to-r from-gray-900 to-gray-900 opacity-60" />
                         <h1 className="my-3 font-[700] opacity-50">
-                          Loading...
+
                         </h1>
                         <p className="leading-[25px] text-sm opacity-50">
-                          Loading description...
+                        
                         </p>
                       </div>
                     </>

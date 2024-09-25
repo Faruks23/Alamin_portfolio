@@ -8,7 +8,7 @@ const Contact = () => {
     AOS.init();
   }, []);
   return (
-    <div>
+    <div className="" id="contact">
       <section className="background-radial-gradient mb-40 overflow-hidden mt-32">
         {/*  */}
         {/* <!-- Jumbotron --> */}
@@ -29,7 +29,7 @@ const Contact = () => {
                 <p
                   data-aos="fade-up"
                   data-aos-duration="2400"
-                  className="opacity-70 text-[hsl(218,81%,85%)] font-mono"
+                  className="opacity-70 text-[hsl(218,81%,85%)] "
                 >
                   Unlock unparalleled opportunities for your business with our
                   premier offering! Elevate your operations, enhance

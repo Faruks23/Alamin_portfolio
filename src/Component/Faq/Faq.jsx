@@ -20,40 +20,77 @@ const Faq = () => {
         SecondTitle={"question"}
       ></SectionTitle>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
-        {faqData.map((item, index) => (
-          <div
-            data-aos="fade-up"
-            data-aos-duration="2400"
-            key={index}
-            className=" rounded-lg overflow-hidden bg-slate-900 shadow-2xl"
-          >
+      <div className=" grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="flex flex-col gap-10 mt-10">
+          {faqData.slice(0, 4).map((item, index) => (
             <div
-              className={`flex items-center justify-between p-4 cursor-pointer text-slate-200 transition-colors duration-300 ${
-                active === index ? " bg-slate-800 text-white " : ""
-              }`}
-              onClick={() => toggleAccordion(index)}
+              data-aos="fade-up"
+              data-aos-duration="2400"
+              key={index}
+              className=" rounded-lg overflow-hidden bg-slate-900 shadow-2xl"
             >
-              <span className="text-md font-semibold">{item.question}</span>
-              <span className="transform transition-transform">
-                {active === index ? (
-                  <span className=" text-2xl">+</span>
-                ) : (
-                  <span className="text-2xl">-</span>
-                )}
-              </span>
+              <div
+                className={`flex items-center justify-between p-4 cursor-pointer text-slate-200 transition-colors duration-300 ${
+                  active === index ? " bg-slate-800 text-white " : ""
+                }`}
+                onClick={() => toggleAccordion(index)}
+              >
+                <span className="text-md font-semibold">{item.question}</span>
+                <span className="transform transition-transform">
+                  {active === index ? (
+                    <span className=" text-2xl">+</span>
+                  ) : (
+                    <span className="text-2xl">-</span>
+                  )}
+                </span>
+              </div>
+              <div
+                className={`px-4  bg-slate-700 text-white transition-max-height duration-300 ease-in-out overflow-hidden  ${
+                  active === index ? "max-h-96 py-5" : "h-0"
+                }`}
+              >
+                <p className=" capitalize font-serif leading-7  font-[50]">
+                  {item.answer}
+                </p>
+              </div>
             </div>
+          ))}
+        </div>
+        <div className="flex flex-col  gap-10 mt-10">
+          {faqData.slice(5, 10).map((item, index) => (
             <div
-              className={`px-4  bg-slate-700 text-white transition-max-height duration-300 ease-in-out overflow-hidden  ${
-                active === index ? "max-h-96 py-5" : "h-0"
-              }`}
+              data-aos="fade-up"
+              data-aos-duration="2400"
+              key={index}
+              className=" rounded-lg overflow-hidden bg-slate-900 shadow-2xl"
             >
-              <p className=" capitalize font-serif leading-7  font-[50]">
-                {item.answer}
-              </p>
+              <div
+                className={`flex items-center justify-between p-4 cursor-pointer text-slate-200 transition-colors duration-300 ${
+                  active === index ? " bg-slate-800 text-white " : ""
+                }`}
+                onClick={() => toggleAccordion(index)}
+              >
+                <span className="text-md font-semibold">{item.question}</span>
+                <span className="transform transition-transform">
+                  {active === index ? (
+                    <span className=" text-2xl">+</span>
+                  ) : (
+                    <span className="text-2xl">-</span>
+                  )}
+                </span>
+              </div>
+              <div
+                className={`px-4  bg-slate-700 text-white transition-max-height duration-300 ease-in-out overflow-hidden  ${
+                  active === index ? "max-h-96 py-5" : "h-0"
+                }`}
+              >
+                <p className=" capitalize font-serif leading-7  font-[50]">
+                  {item.answer}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

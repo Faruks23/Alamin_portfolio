@@ -22,12 +22,12 @@ const About = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="2200"
-            className=" px-20  w-full "
+            className=" md:px-20 px-4  w-full "
           >
             <img
-              src="https://img.freepik.com/foto-gratis/retrato-hombre-negocios-feliz-tableta-digital_1262-12831.jpg"
+              src="../../../public/alamin1.jpg"
               alt=""
-              className="md:w-[400px] h-[400px] w-full rounded-md"
+              className=" md:w-[450px] h-[400px] w-full rounded-md object-center"
             />
             <h1 className=" font-bold text-white text-2xl mb-1 mt-10">
               Alamin
@@ -39,15 +39,18 @@ const About = () => {
             <h1
               data-aos="fade-up"
               data-aos-duration="2200"
-              className="font-bold text-3xl mb-4  uppercase leading-10"
+              className="font-bold text-3xl   leading-10"
             >
               Versatile Digital Marketer. <br />
-              Driving Success Through Strategy and. Engagement
             </h1>
+            <p data-aos="fade-up" data-aos-duration="2300" className=' text-teal-500'>
+              {" "}
+              Driving Success Through Strategy and. Engagement
+            </p>
             <p
               data-aos="fade-up"
               data-aos-duration="2500"
-              className=" mb-10 font-mono pr-7 text-justify"
+              className=" mb-10  pr-7 text-justify mt-4"
             >
               {" "}
               Experienced digital marketer skilled in SEO, social media, and
@@ -59,9 +62,9 @@ const About = () => {
             <img
               data-aos="fade-up"
               data-aos-duration="2600"
-              src="https://img.freepik.com/foto-gratis/retrato-hombre-negocios-feliz-tableta-digital_1262-12831.jpg"
+              src="../../../public/alamin2.jpg"
               alt=""
-              className="md:w-[400px] h-[400px] w-full rounded-md"
+              className="md:w-[400px] h-[400px] w-full rounded-md object-center"
             />
             <p
               data-aos="fade-left"
