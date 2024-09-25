@@ -33,18 +33,18 @@ const Header = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[10] p-2 shadow  rounded-box  w-[300px] h-[400px] flex flex-col gap-3"
+            className="  menu-sm dropdown-content mt-3 z-[10] p-2 shadow  rounded-box  w-[250px]  flex flex-col gap-3 bg-black text-white py-10 "
           >
-            <li>
+            <li className='hover:underline '>
               <Link to={"/"}>Home</Link>
             </li>
-            <li>
+            <li className='hover:underline '>
               <Link to={"/"}>Portfolio</Link>
             </li>
-            <li>
+            <li className='hover:underline '>
               <Link to={"/"}>About</Link>
             </li>
-            <li>
+            <li className='hover:underline '>
               <Link to={"/"}>Services</Link>
             </li>
           </ul>
