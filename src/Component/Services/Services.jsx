@@ -12,7 +12,7 @@ const [loading, setLoading] = useState(true)
   
   useEffect(() => {
     setLoading(true)
-    fetch(`https://alaminislam.vercel.app/services`)
+    fetch(`https://alamin-cms.vercel.app/services`)
       .then((res) => res.json())
       .then((data) => {
         setServices(data);
@@ -69,7 +69,7 @@ const [loading, setLoading] = useState(true)
                 {services.slice(0, visible).map((service, index) => {
                   return (
                     <div
-                      data-aos="fade-up"
+                      data-aos="fade-in"
                       data-aos-duration="2200"
                       key={service._id}
                       className={` font-serif   px-3 py-2 bg-gradient-to-r from-gray-900 to-gray-950 hover:shadow-2xl   hover:scale-150  duration-300 rounded-md  shadow-xl overflow-hidden border border-teal-400`}

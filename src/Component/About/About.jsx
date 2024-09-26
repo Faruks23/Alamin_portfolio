@@ -25,7 +25,7 @@ const About = () => {
             className=" md:px-20 px-4  w-full "
           >
             <img
-              src="../../../public/alamin1.jpg"
+              src="/alamin1.jpg"
               alt=""
               className=" md:w-[450px] h-[400px] w-full rounded-md object-center"
             />
@@ -62,7 +62,7 @@ const About = () => {
             <img
               data-aos="fade-up"
               data-aos-duration="2600"
-              src="../../../public/alamin2.jpg"
+              src="/alamin2.jpg"
               alt=""
               className="md:w-[400px] h-[400px] w-full rounded-md object-center"
             />
