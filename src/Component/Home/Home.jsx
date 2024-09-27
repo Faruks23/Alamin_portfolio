@@ -15,18 +15,17 @@ const Home = () => {
     <div className="">
       <HeroSection></HeroSection>
       <Services></Services>
-      <Suspense fallback={<Loading />}>
 
       <Projects></Projects>
-      </Suspense>
+
       <About></About>
 
       <Contact></Contact>
       <Team></Team>
-      <MyLocation></MyLocation>
       <Review></Review>
 
       <Faq></Faq>
+      <MyLocation></MyLocation>
     </div>
   );
 };

@@ -48,12 +48,12 @@ const HeroSection = () => {
 
       {/* hero main content */}
       <div className="hr-content md:flex gap-6  justify-between items-center  mx-[5%] ">
-        <section class=" text-white py-16 md:w-[50%]">
-          <div class="">
+        <section className=" text-white py-16 md:w-[50%]">
+          <div className="">
             <h1
               data-aos="fade-up"
               data-aos-duration="1100"
-              class="md:text-[50px] text-3xl font-[700] mb-10 md:leading-[60px] mt-[-70px]  text-teal-500 font-serif  leading-[50px] "
+              className="md:text-[50px] text-3xl font-[700] mb-10 md:leading-[60px] mt-[-70px]  text-teal-500 font-serif  leading-[50px] "
             >
               Digital Marketing Expert, <br />
               <TypeAnimation
@@ -73,7 +73,7 @@ const HeroSection = () => {
             <p
               data-aos="fade-up"
               data-aos-duration="2200"
-              class=" capitalize  text-gray-300  font-thin  leading-7"
+              className=" capitalize  text-gray-300  font-thin  leading-7"
             >
               Strategizing, optimizing, and delivering digital marketing
               solutions to drive success and growth in the digital

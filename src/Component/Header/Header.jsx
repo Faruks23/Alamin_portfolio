@@ -5,7 +5,13 @@ import AOS from "aos";
 import "aos/dist/aos.css"; 
 
 const Header = () => {
-
+ const handleScrollToContact = () => {
+   const contactSection = document.getElementById("contact");
+   
+   if (contactSection) {
+     contactSection.scrollIntoView({ behavior: "smooth" });
+   }
+ };
 
   useEffect(() => {
     AOS.init();
@@ -83,15 +89,16 @@ const Header = () => {
           data-aos-duration="2600"
           className="ml-0 md:ml-32 "
         >
-          <a href="#contact">
-            {" "}
-            <button
+         
+          
+          <button
+            onClick={handleScrollToContact}
               type="button"
               className="  border-0 px-3 py-1 rounded-md  bg-teal-500 text-white capitalize font-serif"
             >
               contact
             </button>
-          </a>
+       
         </div>
       </div>
     </div>

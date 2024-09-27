@@ -43,22 +43,22 @@ const Services = () => {
             })}
           </div>
         </div>
-        <div className="c-round w-[300px] h-[300px] rounded-full absolute left-[-200px] top-[36%]  border  flex  justify-center items-center">
+        {/* <div className="c-round w-[300px] h-[300px] rounded-full absolute left-[-200px] top-[36%]  border  flex  justify-center items-center">
           <h1 className=" c-round text-3xl font-bold text-white text-center">
             +
           </h1>
           <div className=" c-round w-[200px] h-[200px] rounded-full border-2  ">
             <h1 className="text-3xl font-bold text-white text-center">+</h1>
           </div>
-        </div>
-        <div className=" c-round w-[300px] h-[300px] rounded-full border absolute right-[-200px] top-[18%]  ">
+        </div> */}
+        {/* <div className=" c-round w-[300px] h-[300px] rounded-full border absolute right-[-200px] top-[18%]  ">
           <h1 className=" c-round text-3xl font-bold text-white text-center">
             +
           </h1>
           <div className=" c-round w-[200px] h-[200px] rounded-full border-2  ">
             <h1 className="text-3xl font-bold text-white text-center">+</h1>
           </div>
-        </div>
+        </div> */}
 
         <div className="flex justify-center my-20 ">
           <Link to={'/services'}>
