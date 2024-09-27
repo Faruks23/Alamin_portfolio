@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Header.css'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css"; 
 
@@ -35,17 +35,17 @@ const Header = () => {
             tabIndex={0}
             className="  menu-sm dropdown-content mt-3 z-[10] p-2 shadow  rounded-box  w-[250px]  flex flex-col gap-3 bg-black text-white py-10 "
           >
-            <li className='hover:underline '>
-              <Link to={"/"}>Home</Link>
+            <li className="hover:underline ">
+              <NavLink to={"/"}>Home</NavLink>
             </li>
-            <li className='hover:underline '>
-              <Link to={"/"}>Portfolio</Link>
+            <li className="hover:underline ">
+              <NavLink to={"/portfolio"}>Portfolio</NavLink>
             </li>
-            <li className='hover:underline '>
-              <Link to={"/"}>About</Link>
+            <li className="hover:underline ">
+              <NavLink to={"/"}>About</NavLink>
             </li>
-            <li className='hover:underline '>
-              <Link to={"/"}>Services</Link>
+            <li className="hover:underline ">
+              <NavLink to={"/services"}>Services</NavLink>
             </li>
           </ul>
         </div>
@@ -54,9 +54,9 @@ const Header = () => {
           data-aos-duration="2100"
           className=" font-serif text-xl italic font-[700] md:text-[42px]"
         >
-          <div class="wrapper">
+          <div className="wrapper">
             <svg>
-              <text x="50%" y="50%" dy=".5em" text-anchor="middle">
+              <text x="50%" y="50%" dy=".5em" textAnchor="middle">
                 All Amin
               </text>
             </svg>
@@ -66,16 +66,16 @@ const Header = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="flex gap-10 items-center hover:text-white">
           <li data-aos="fade-down" data-aos-duration="2200">
-            <Link to={"/"}>Home</Link>
+            <NavLink to={"/"}>Home</NavLink>
           </li>
           <li data-aos="fade-down" data-aos-duration="2300">
-            <Link to={"/"}>Portfolio</Link>
+            <NavLink to={"/portfolio"}>Portfolio</NavLink>
           </li>
           <li data-aos="fade-down" data-aos-duration="2400">
-            <Link to={"/"}>About</Link>
+            <NavLink to={"/"}>About</NavLink>
           </li>
           <li data-aos="fade-down" data-aos-duration="2500">
-            <Link to={"/"}>Services</Link>
+            <NavLink to={"services"}>Services</NavLink>
           </li>
         </ul>
         <div
@@ -89,10 +89,9 @@ const Header = () => {
               type="button"
               className="  border-0 px-3 py-1 rounded-md  bg-teal-500 text-white capitalize font-serif"
             >
-              Heir Me
+              contact
             </button>
           </a>
-        
         </div>
       </div>
     </div>

@@ -5,6 +5,8 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Component/Home/Home.jsx";
 import { SmoothScroll } from "./shared/SmothScroll.jsx";
+import Portfolio from "./Component/pages/Portfolio/Portfolio.jsx";
+import ServicePage from "./Component/pages/service/Servicepage.jsx";
 
 const routes = createBrowserRouter([
   {
@@ -14,6 +16,14 @@ const routes = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/portfolio",
+        element: <Portfolio></Portfolio>,
+      },
+      {
+        path: "/services",
+        element: <ServicePage></ServicePage>,
       },
     ],
   },

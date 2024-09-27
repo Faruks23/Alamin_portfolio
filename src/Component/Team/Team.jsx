@@ -8,7 +8,7 @@ const Team = () => {
   const fetchTeamMembers = async () => {
     try {
       const response = await fetch(
-        `https://alaminislam.vercel.app/team/members`
+        `https://alamin-cms.vercel.app/team/members`
       );
       const data = await response.json();
       console.log(data);
@@ -48,8 +48,8 @@ const Team = () => {
                 </div>
                 <div className="info mt-3 text-sm">
                   <h1 className="mt-1  text-emerald-400">Name:{member.name}</h1>
-                  <h1 className="">Email:{member.email}</h1>
-                  <h1 className="my-1">Role:{member.role}</h1>
+                  <h1 className="">Role:{member.designation}</h1>
+                  
                 </div>
               </div>
             );

@@ -1,15 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 ul li{
-box-shadow: 2px 2px  5px rgba(0, 0, 0,0.4);
-
- border-radius: 5px;
  font-weight: 700;
  color: #fff!important;
 
 }
 
- 
-
-@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
 .wrapper svg {
 	font-family: "Russo One", sans-serif;
