@@ -16,7 +16,7 @@ const HeroSection = () => {
 
   const [socials,setSocialAccounts]=useState([])
    const fetchSocialAccounts = async () => {
-     const response = await fetch(`${import.meta.env.VITE_SERVER_KEY}/social`);
+     const response = await fetch(`https://alamin-cms.vercel.app/social`);
      const data = await response.json();
      setSocialAccounts(data);
    };
